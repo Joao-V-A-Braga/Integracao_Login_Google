@@ -47,7 +47,6 @@ module.exports = app => {
         try {
             if (userData) {
                 const token = decode(userData.token)
-                console.log(token)
                 if (new Date(token.exp * 1000) > new Date()) return res.status(201).send(true)
             }
         } catch (e) {
