@@ -1,0 +1,15 @@
+.login-main{
+    margin-top: 10%;
+    width: 20vw;
+}
+
+mat-card{
+    min-width: 40%;
+    padding: 20px;
+}
+
+.login-main .content{
+    display: flex;
+    flex-direction: column;
+    
+}
