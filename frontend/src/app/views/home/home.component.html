@@ -11,9 +11,10 @@
                 <input type="password" matInput [(ngModel)]="password" placeholder="password">
             </mat-form-field>
         </mat-card-content>
-        <mat-card-actions align="end">
+        <mat-card-actions class="buttons">
+            <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div>
             <button mat-raised-button (click)="click()" color="primary">Login</button>
         </mat-card-actions>
-        
+
     </mat-card>
 </div>

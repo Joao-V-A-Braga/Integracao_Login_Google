@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Frontend</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id"
+    content="57345851816-qrlcfpn1p2bdo53sj3ea23ci546bmihk.apps.googleusercontent.com">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body class="mat-typography">
+
+  <script>
+    function onSignIn(googleUser) {
+      const id_token = googleUser.getAuthResponse().id_token;
+    }
+
+  </script>
   <app-root></app-root>
+
 </body>
+
 </html>
