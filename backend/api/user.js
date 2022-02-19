@@ -67,5 +67,5 @@ module.exports = app => {
             .catch(err => res.status(500).send(err))
     }
 
-    return { save , get, getUserById}
+    return { save , get, getUserById, encryptPassword}
 }

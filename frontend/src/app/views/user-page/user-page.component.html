@@ -1,1 +1,10 @@
-<p>Nome: {{name}}</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Nome: {{name}}</mat-card-title>
+        <mat-card-subtitle>Email: {{email}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-subtitle>Id: {{id}}</mat-card-subtitle>
+    <div class="self-end">
+        <button  mat-raised-button (click)="logOut()" color="primary">LogOut</button>
+    </div>
+</mat-card>
